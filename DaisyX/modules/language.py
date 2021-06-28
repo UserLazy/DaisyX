@@ -78,7 +78,7 @@ async def select_lang_keyboard(message, strings, edit=False):
 
     markup.add(
         InlineKeyboardButton(
-            strings["crowdin_btn"], url="https://t.me/Daisysupport_official"
+            strings["crowdin_btn"], url="https://t.me/OdaSupport"
         )
     )
     if edit:
@@ -174,5 +174,5 @@ This module is dedicated towards utlising Daisy's localization feature! You can 
 - /lang (language codename): Sets a language
 
 <b>Example:</b> <code>/lang</code>
-Daisy will send you bunch of inline buttons where you can select your prefered language interatively without any hassles!
+Oda will send you bunch of inline buttons where you can select your prefered language interatively without any hassles!
 """
