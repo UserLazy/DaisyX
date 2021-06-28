@@ -45,16 +45,17 @@ def help_markup(modules):
 
 
 STICKERS = (
-    "CAACAgUAAxkBAAJOGmBeli95P073FKVkgc4esfKE4UlXAAIOAgACyavAVkbLMIidWYdyHgQ",
-    "CAACAgUAAxkBAAJOG2BeljABwlCfwzHT1gzyiciBri6_AAIsAgACXBPBVgpGQRz-1qmlHgQ",
-    "CAACAgUAAxkBAAJOHGBeljOJ35CQNnkpnVcgRoHuJX6DAAL3AQACN8TBVm1PIART01cWHgQ",
-    "CAACAgUAAxkBAAJOHWBeljXW9QzYQ51gpCjHZHCF5Ui6AAJ7AgAC3zDBVo2xenp7JYhAHgQ",
-    "CAACAgUAAxkBAAJOHmBeljjU0_FT_QpdUUJBqVUC0nfJAAKYAgACJ_jBVvntHY_8WF27HgQ",
-    "CAACAgUAAxkBAAJOH2BeljrV68mPLu8_6n4edT20Q3IQAAJ9AgACq3LBVmLuZuNPlvkfHgQ",
-    "CAACAgUAAxkBAAJOIGBeljttuniUPykRtzkSZj3SRwKJAAI7AgACNm_BVp8TCkE6ZqCoHgQ",
-    "CAACAgUAAxkBAAJOIWBelj-P_2vtVqtkF2OMlVN3M0N4AAK3AQACSm3BVkXF2voraS2tHgQ",
-    "CAACAgUAAxkBAAJOImBelkJxUBm2rL1iPfMZfk-_9DaOAALrAgAC4T3BVniopXQVsZ4KHgQ",
-    "CAACAgUAAxkBAAJOI2BelkMO0AX_wtAc7hUZz1NixuMlAAKEAwACY4TAViVuNLTBmmkgHgQ",
+    "CAACAgEAAxkDAAEE5zBgzpDoaKGN_MxWotYtWkpb1ifgMgACXAADni6oMXCx-PB6sonJHgQ",
+    "CAACAgEAAxkDAAEE5zFgzpFDFp_0V9vi-r5ZnKaOUDCVkAACVQADni6oMROiUdEEyPN8HgQ",
+    "CAACAgEAAxkDAAEE5zJgzpFxlslQcP9Xdjsvqb2oqkZrxQACeAADni6oMQhcS_oH6wPjHgQ",
+    "CAACAgEAAxkDAAEE5zNgzpGbRbc_ecGW1qIk2qojT0yTmgACdwADni6oMd2k3jP94wO6HgQ",
+    "CAACAgEAAxkDAAEE5zZgzpG9wHOrBm-X_gNGWlUSGXkEMQACWAADni6oMe7FeddXzDLoHgQ",
+    "CAACAgUAAx0CRI6ivgAC1qVg2iEgaRvIKr9auH4VGEalNK8UGAACAQMAAvEAAdBWNmr7bsO-rvseBA",
+    "CAACAgUAAx0CRI6ivgAC1rFg2iIT1mcmXTV1TZvM2WaA0tmKuAACRAMAAmpP0Fb1Txeqb6b0AR4E",
+    "CAACAgUAAx0CRI6ivgAC1rpg2iJ0UnLFLvWLw86DTatSLyKnvgAChwMAAlf90VYju1kc0R0pdB4E",
+    "CAACAgUAAx0CRI6ivgAC1sJg2iLnlFEKWs07Jw-ws784R01FTwACrQIAAlhx0FaXbV8XMcrAWx4E",
+    "CAACAgUAAx0CRI6ivgAC1sxg2iNwFjooHU0PjKL48FdVRw_NIwACyAMAAoyf0FaMuLOiawABEEceBA",
+    "CAACAgUAAx0CRI6ivgAC1tRg2iPn9I5BtWpa_dL0kq7b4qvd-AAC-QIAArxX0VbSgHcf_OyMMB4E",
 )
 
 
@@ -81,19 +82,19 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
         InlineKeyboardButton(
-            strings["btn_source"], url="https://github.com/TeamDaisyX/"
+            strings["btn_source"], url="https://github.com/UserLazy/"
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/DaisyXUpdates"),
+        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/Grup_Anime_Chat"),
         InlineKeyboardButton(
-            strings["btn_group"], url="https://t.me/DaisySupport_Official"
+            strings["btn_group"], url="https://t.me/OdaSupport"
         ),
     )
     buttons.add(
         InlineKeyboardButton(
-            "👸🏼 Add DaisyX to your group",
-            url=f"https://telegram.me/daisyxbot?startgroup=true",
+            "✤ Add to your Group ✤",
+            url=f"https://t.me/OdaRobot?startgroup=true",
         )
     )
     # Handle error when user click the button 2 or more times simultaneously
@@ -135,7 +136,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/DaisyXBOT?start")
+        InlineKeyboardButton(text=text, url="https://t.me/OdaRobot?start")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
