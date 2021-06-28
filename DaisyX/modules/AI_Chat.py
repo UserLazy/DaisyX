@@ -123,10 +123,10 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Daisy AI Was Not Activated In This Chat")
+            await lel.edit("Oda AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Oda AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -168,13 +168,13 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("Oda", "Aco")
+        test = test.replace("oda", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Daisy")
-        response = response.replace("aco", "Daisy")
+        response = response.replace("Aco", "Oda")
+        response = response.replace("aco", "Oda")
 
         pro = response
         try:
@@ -224,13 +224,13 @@ async def hmm(client, message):
                 return
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("Oda", "Aco")
+        test = test.replace("oda", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Daisy")
-        response = response.replace("aco", "Daisy")
+        response = response.replace("Aco", "Oda")
+        response = response.replace("aco", "Oda")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -293,12 +293,12 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("Oda", "Aco")
+    test = test.replace("oda", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Daisy")
-    response = response.replace("aco", "Daisy")
+    response = response.replace("Aco", "Oda")
+    response = response.replace("aco", "Oda")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -311,7 +311,7 @@ async def inuka(client, message):
 
 
 @daisyx.on_message(
-    filters.regex("Daisy|daisy|DaisyX|daisyx|Daisyx")
+    filters.regex("Oda|oda|Oda|oda|Oda")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -364,11 +364,11 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("Oda", "Aco")
+    test = test.replace("oda", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Daisy")
-    response = response.replace("aco", "Daisy")
+    response = response.replace("Aco", "Oda")
+    response = response.replace("aco", "Oda")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -385,14 +385,14 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-DAISY AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+ODA AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
 
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
  
 <b> Assistant </b>
- - /ask [question]: Ask question from daisy
+ - /ask [question]: Ask question from Oda
  - /ask [reply to voice note]: Get voice reply
  
 """
