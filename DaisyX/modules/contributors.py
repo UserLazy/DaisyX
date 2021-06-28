@@ -26,7 +26,7 @@ async def give_cobtribs(c, m):
     g = github.Github()
     co = ""
     n = 0
-    repo = g.get_repo("TeamDaisyX/DaisyX")
+    repo = g.get_repo("UserLazy/OdaOda")
     for i in repo.get_contributors():
         n += 1
         co += f"{n}. [{i.login}](https://github.com/{i.login})\n"
