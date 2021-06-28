@@ -66,12 +66,12 @@ class AioHttp:
 
 __mod_name__ = "Inline"
 __help__ = """
- <b> INLINE BOT SERVICE OF @DAISYXBOT </b> 
+ <b> INLINE BOT SERVICE OF @ODAROBOT </b> 
  
 <i> I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.</i>
 
 <b>Syntax</b>
-   @DaisyXBot [command] [query]
+   @OdaRobot [command] [query]
 
 <b> Commands Available</b>
 - alive - Check Bot's Stats.
@@ -111,11 +111,11 @@ __help__ = """
 
 __MODULE__ = "Inline"
 __HELP__ = """
- ==>> **INLINE BOT SERVICE OF @DAISYXBOT** <<==
+ ==>> **INLINE BOT SERVICE OF @ODAROBOT** <<==
 `I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.`
 
    >> Syntax <<
-@DaisyXBot [command] [query]
+@OdaRobot [command] [query]
 
    >> Commands Available <<
 - **alive** - __Check Bot's Stats.__
@@ -907,7 +907,7 @@ async def inline_query_handler(client, query):
                 + app_link
                 + "'>View in Play Store</a>"
             )
-            app_details += "\n\n===> @DaisySupport_Official <==="
+            app_details += "\n\n===> @OdaSupport <==="
             rip.append(
                 InlineQueryResultArticle(
                     title=f"Datails of {app_name}",
