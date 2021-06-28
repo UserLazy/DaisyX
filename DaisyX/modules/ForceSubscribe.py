@@ -216,7 +216,7 @@ def config(client, message):
 
 __help__ = """
 <b>ForceSubscribe:</b>
-- Daisy can mute members who are not subscribed your channel until they subscribe
+- Oda can mute members who are not subscribed your channel until they subscribe
 - When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 <b>Setup</b>
 1) First of all add me in the group as admin with ban users permission and in the channel as admin.
