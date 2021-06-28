@@ -37,6 +37,7 @@ async def add_user_to_db(user):
         user = user.user
 
     new_user = {
+        "photo_id": user.photo,
         "user_id": user.id,
         "first_name": user.first_name,
         "last_name": user.last_name,
