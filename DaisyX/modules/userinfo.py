@@ -46,7 +46,7 @@ infotext = (
     " * Last Online: `{last_online}`\n"
     " * Bio: {bio}"
 )
-
+return [infotext, photo_id]
 
 def LastOnline(user: User):
     if user.is_bot:
@@ -93,6 +93,7 @@ async def whois(client, message):
     desc = desc.description
     await message.reply_text(
         infotext.format(
+            photo_id = user.photo.big_file_id if user.photo else "",
             full_name=FullName(user),
             user_id=user.id,
             user_dc=user.dc_id,
