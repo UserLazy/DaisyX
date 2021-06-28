@@ -166,15 +166,15 @@ STRINGS:
   pm_menu:
     start_hi_group: '¡Hola! Mi nombre es Sophie'
     start_hi: "¡Hola! ¡Mi nombre es <b>Daisy</b>, te ayudo a gestionar tu grupo de una manera eficiente!"
-    btn_source: "📜 Código fuente"
-    btn_help: "❔ Ayuda"
+    btn_source: "✫ Source Code ✫"
+    btn_help: "[► Help ◄]"
     btn_lang: "es Idioma"
-    btn_channel: "📡 Noticias de Daisy"
-    btn_group: "👥 Daisy Support"
+    btn_channel: "✯ Anime Group ✯"
+    btn_group: "✯ Support Group ✯"
     btn_group_help: "Click me for help!"
     back: Atrás
     #/help
-    help_header: "¡Oye! Mi nombre es <b>Daisy</b>. Soy un robot de gestión de grupos, ¡estoy aquí para ayudarte a moverte y mantener el orden en tus grupos!\nTengo muchas funciones útiles, como control de flood, un sistema de advertencia, un sistema de notas e incluso respuestas predeterminadas a ciertas palabras clave."
+    help_header: "¡Oye! Mi nombre es <b>Oda</b>. Soy un robot de gestión de grupos, ¡estoy aquí para ayudarte a moverte y mantener el orden en tus grupos!\nTengo muchas funciones útiles, como control de flood, un sistema de advertencia, un sistema de notas e incluso respuestas predeterminadas a ciertas palabras clave."
     click_btn: Haz clic aquí
   disable:
     #/disableable
@@ -554,7 +554,7 @@ STRINGS:
   #success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
     default_welcome: "Welcome {mention}! How are you?"
-    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @DaisyXUpdates."
+    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my group support @OdaRobot."
     default_security_note: "¡Bienvenido/a {mention}! ¡Por favor, haz clic en el botón de abajo para verificar que eres un ser humano!"
     bool_invalid_arg: Argumento inválido, se esperaba <code>on</code>/<code>off</code>.
     #/setwelcome
