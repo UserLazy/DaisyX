@@ -203,7 +203,7 @@ async def _(event):
 
 
 __help__ = """
-<b> Daisy's filters are the blacklist too </b>
+<b> Oda's filters are the blacklist too </b>
  - /addfilter [trigger] Select action: blacklists the trigger
  - /delfilter [trigger] : stop blacklisting a certain blacklist trigger
  - /filters: list all active blacklist filters
