@@ -54,11 +54,11 @@ async def shazamm(client, message):
     await kek.delete()
 
 
- __mod_name__ = "Shazam"
- __help__ = """
- <b> SHAZAMMER </b>
- <u> Find any song with it's music or part of song</u>
- - /shazam : identify the song from Friday's Database
+ #__mod_name__ = "Shazam"
+# __help__ = """
+# <b> SHAZAMMER </b>
+# <u> Find any song with it's music or part of song</u>
+# - /shazam : identify the song from Friday's Database
 
- <i> Special credits to friday userbot</i>
+# <i> Special credits to friday userbot</i>
  """
