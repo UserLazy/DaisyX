@@ -20,8 +20,8 @@ You can check out this [link](https://timezonedb.com/time-zones) for the availab
 Usage: Create a paste or a shortened url using nekobin (https://nekobin.com)
 
 <b> TELEGRAPH </b>
-- /telegraph media : To Make Link of Any Image Or MP4 video. 
-- /telegraph text : To make Link of Any Text Written. 
+- /tg m : To Make Link of Any Image Or MP4 video. 
+- /tg t : To make Link of Any Text Written. 
 
 <b> TORRENT </b>
 - /torrent [QUERY]: Search for torrent links
