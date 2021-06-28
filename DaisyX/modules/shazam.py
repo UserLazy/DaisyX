@@ -46,7 +46,7 @@ async def shazamm(client, message):
     messageo = f"""<b>Song Shazamed.</b>
 <b>Song Name : </b>{title}
 <b>Song By : </b>{by}
-<u><b>Identified Using @DaisyXBot - Join our support @DaisySupport_Official</b></u>
+<u><b>Identified Using @OdaRobot - Join our support @OdaSupport</b></u>
 <i>Powered by @FridayOT</i>
 """
     await client.send_photo(message.chat.id, image, messageo, parse_mode="HTML")
@@ -54,11 +54,11 @@ async def shazamm(client, message):
     await kek.delete()
 
 
-# __mod_name__ = "Shazam"
-# __help__ = """
-# <b> SHAZAMMER </b>
-# <u> Find any song with it's music or part of song</u>
-# - /shazam : identify the song from Friday's Database
+ __mod_name__ = "Shazam"
+ __help__ = """
+ <b> SHAZAMMER </b>
+ <u> Find any song with it's music or part of song</u>
+ - /shazam : identify the song from Friday's Database
 
-# <i> Special credits to friday userbot</i>
-# """
+ <i> Special credits to friday userbot</i>
+ """
