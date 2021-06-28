@@ -140,7 +140,7 @@ ydl_opts = {
         {
             "key": "FFmpegExtractAudio",
             "preferredcodec": "mp3",
-            "preferredquality": "192",
+            "preferredquality": "320",
         }
     ],
 }
@@ -269,7 +269,7 @@ async def ytmusic(client, message: Message):
     global dl_limit
     if dl_limit >= 4:
         await message.reply_text(
-            "Daisy s server busy due to too many downloads, try again after sometime."
+            "Oda s server busy due to too many downloads, try again after sometime."
         )
         return
     urlissed = get_text(message)
