@@ -414,7 +414,7 @@ async def stop(event):
 
 
 __help__ = """
-You can now send polls anonymously with Daisy
+You can now send polls anonymously with Oda
 Here is how you can do it:
 <b> Parameters </b> -
  - poll-id - a poll id consists of an 5 digit random integer, this id is automatically removed from the system when you stop your previous poll
