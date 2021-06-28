@@ -6,7 +6,7 @@ from telethon import events
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
-from DaisyX import OWNER_ID, SUDO_USERS, tbot
+from DaisyX import OWNER_ID, OPERATORS, tbot
 
 BANNED_RIGHTS = ChatBannedRights(
     until_date=None,
@@ -41,7 +41,7 @@ edit_time = 3
 async def _(event):
     if event.fwd_from:
         return
-    if event.sender_id in SUDO_USERS:
+    if event.sender_id in OPERATORS:
         pass
     elif event.sender_id == OWNER_ID:
         pass
@@ -73,7 +73,7 @@ async def _(event):
     if r_sender_id == OWNER_ID:
         await event.reply("Fool, how can I gban my master ?")
         return
-    if r_sender_id in SUDO_USERS:
+    if r_sender_id in OPERATORS:
         await event.reply("Hey that's a sudo user idiot.")
         return
 
@@ -118,7 +118,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    if event.sender_id in SUDO_USERS:
+    if event.sender_id in OPERATORS:
         pass
     elif event.sender_id == OWNER_ID:
         pass
@@ -147,7 +147,7 @@ async def _(event):
     if r_sender_id == OWNER_ID:
         await event.reply("Fool, how can I ungban my master ?")
         return
-    if r_sender_id in SUDO_USERS:
+    if r_sender_id in OPERATORS:
         await event.reply("Hey that's a sudo user idiot.")
         return
 
