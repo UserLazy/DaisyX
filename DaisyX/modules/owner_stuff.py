@@ -166,7 +166,7 @@ async def bot_stop(message):
 
 @register(cmds="restart", is_owner=True)
 async def restart_bot(message):
-    await message.reply("Daisy will be restarted...")
+    await message.reply("Oda will be restarted...")
     args = [sys.executable, "-m", "DaisyX"]
     os.execl(sys.executable, *args)
 
@@ -216,7 +216,7 @@ async def upload_file(message):
 
 @register(cmds="logs", is_op=True)
 async def upload_logs(message):
-    input_str = "logs/daisy.log"
+    input_str = "logs/oda.log"
     with open(input_str, "rb") as f:
         await tbot.send_file(message.chat.id, f, reply_to=message.message_id)
 
@@ -237,7 +237,7 @@ async def get_event(message):
 @register(cmds="stats", is_op=True)
 async def stats(message):
     if message.from_user.id in OWNER_ID:
-        text = f"<b>Daisy {DAISY_VERSION} stats</b>\n"
+        text = f"<b>Oda {DAISY_VERSION} stats</b>\n"
 
         for module in [m for m in LOADED_MODULES if hasattr(m, "__stats__")]:
             text += await module.__stats__()
