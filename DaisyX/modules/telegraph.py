@@ -27,7 +27,7 @@ from telethon import events
 from DaisyX.services.telethon import tbot as borg
 
 telegraph = Telegraph()
-r = telegraph.create_account(short_name="DaisyX")
+r = telegraph.create_account(short_name="Oda")
 auth_url = r["auth_url"]
 
 # Will change later
@@ -36,7 +36,7 @@ TMP_DOWNLOAD_DIRECTORY = "./"
 BOTLOG = False
 
 
-@borg.on(events.NewMessage(pattern="/telegraph (media|text) ?(.*)"))
+@borg.on(events.NewMessage(pattern="/tg (m|t) ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -112,8 +112,8 @@ def resize_image(image):
 
 __mod_name__ = """
 <b> Telegraph text/video upload plugin </b>
- - /telegraph media <i>reply to image or video<i> : Upload image and video directly to telegraph.
- - /telegraph text <i>reply to text</i> : upload text directly to telegraph .
+ - /tg m <i>reply to image or video<i> : Upload image and video directly to telegraph.
+ - /tg t <i>reply to text</i> : upload text directly to telegraph .
 """
 
 __mod_name__ = "Telegraph"
