@@ -46,7 +46,6 @@ infotext = (
     " * Last Online: `{last_online}`\n"
     " * Bio: {bio}"
 )
-return [infotext, photo_id]
 
 def LastOnline(user: User):
     if user.is_bot:
