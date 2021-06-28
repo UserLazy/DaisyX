@@ -332,7 +332,7 @@ async def torrentstop(event):
     await tbot.edit_message(
         chatid,
         msgid,
-        "Thanks for using.\n❤️ from [Daisy X](t.me/DaisyXBot) !",
+        "Thanks for using.\n❤️ from [Oda Nobunaga](t.me/OdaRobot) !",
         link_preview=False,
     )
 
